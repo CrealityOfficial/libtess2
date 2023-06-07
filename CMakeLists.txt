@@ -26,3 +26,7 @@ __add_real_target(libtess2 lib SOURCE ${SRCS}
 
 								  
 								)
+
+if(CC_INSTALL_LIBTESS2)
+	__install_directory_specif(${CMAKE_CURRENT_SOURCE_DIR}/ libtess2)
+endif()
